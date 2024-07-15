@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="uft-8">
+	<title>Google Cloud Plataform</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="header">
+		<h1 class="sobretexto">Google Cloud <br>Plataform</h1>
+		<img src="googleClound.png" style="opacity: 25% ;width: 100%;height:100%;">
+	</div>
+
+<hr class="solid">
+
+	<div id="cont">
+		<div class="linha" style="background-color: #E7EDFA">
+			<div class="coluna">
+				<br><br>
+				<h2> Primeiros passos: <br></h2>
+			</div>
+		</div>
+
+		<div class="linha"style="background-color: #E7EDFA">
+			<div class="coluna">
+				<p style="text-indent: 0px;">
+					<code>
+					resources:- name: the-first-vm<br>
+  					type: compute.v1.instance<br>
+					properties:<br>
+    				zone: us-central1-a<br>
+    				machineType: https://www.googleapis.com/compute/v1/projects/myproject/zones/us-central1-a/machineTypes/f1-micro<br>
+    				disks:<br>
+    				- deviceName: boot<br>
+      				type: PERSISTENT<br>
+      				boot: true<br>
+      				autoDelete: true<br>
+      				initializeParams:<br>
+        			sourceImage: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-7-wheezy-v20150423
+    				networkInterfaces:<br>
+    				- network: https://www.googleapis.com/compute/v1/projects/myproject/<br>global/networks/default
+      				accessConfigs:<br>
+      				- name: External NAT<br>
+        			type: ONE_TO_ONE_NAT<br>
+        			</code>
+        		</p>
+			</div>
+			<div class="coluna">
+				<img src="googleManager.jpg" style=" max-width:100%;max-height:100%;object-fit: cover;">
+			</div>
+		</div>
+
+	<hr class="solid">
+		<div class="linha"></div>
+		<div class="linha"></div>
+		<div class="linha"></div>
+		<div class="linha">
+				<img src="Fcomp.jpg">
+		</div>
+		<div class="linha"></div>
+		<div class="linha"></div>
+		<div class="linha"></div>
+
+	<hr class="solid">
+
+	<div class="linha" style="background-color: #E7EDFA">
+			<div class="coluna">
+				<br><br>
+				<h2> Estrutura de pasta base como um código: <br></h2>
+			</div>
+	</div>
+
+	<div class="linha"style="background-color: #E7EDFA">
+			<div class="coluna">
+				<p>
+					A estrutura de pastas da base de código de exemplo é flexível e pode ser personalizada. No entanto, ela foi parcialmente fixada no código da combinação de configurações e do arquivo de esquema do Deployment Manager. Isso significa que, ao fazer uma modificação, você precisará refleti-la nos arquivos da combinação de configurações e nos arquivos de esquema.
+				</p>
+			</div>
+
+			<div class="coluna">
+				<img src="estruturaPastas.png"  style="height:85%;width: 45%">
+			</div>
+	</div>
+	</div>
+
+<hr class="solid">
+
+		<div class="linha">
+			<div class="coluna">
+				<h2>Passo a Passo em vídeo: </h2>
+			</div>
+			
+			<div class="coluna">
+				<iframe src="https://www.youtube-nocookie.com/embed/qVKp7W1bfrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="foot">
+		<div class="linha">
+			<div class="coluna">
+				<p> 
+					<strong> 
+					Integrantes:<br>
+					André Lucas;<br>
+					Anna Clara Bernardo;<br>
+					Gabriel Caetano;<br>
+					Gabrielly Santos;<br>
+					Rafael Blecha<br>
+					</strong>
+				</p>
+			</div>
+
+			<div class="coluna">
+				<p>
+					<strong>
+						Turma: Redes de Computadores<br>
+						Professor: Wallace <br>
+					</strong>
+				</p>
+			</div>
+		</div>
+			<div class="linha">
+				<p style="color: darkgray;opacity:20%">
+						Site criado por: Joaquim<br>
+						Curso: Desenvolvimento de Sistemas
+				</p>
+			</div>
+		</div>
+		
+	</div>
+
+</body>

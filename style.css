@@ -1,0 +1,171 @@
+/*pra computador*/
+
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+body {
+	font-family: Tahoma, sans-serif;
+}
+
+h1{
+	font-size: 120px;
+}
+h2{
+	font-size:75px;
+}
+p{
+	padding: 15px;
+	text-indent: 50px;
+	line-height: 1.5;
+	text-align: left;
+}
+iframe{
+	width: 560px;
+	height: 315px;
+	text-align: center;
+}
+
+.linha {
+  display:flex;
+  flex-direction: row;
+}
+.sobretexto{
+   position: absolute;
+   text-align: center;
+   top: 30%;
+    left: 20%;
+    color: white;
+}
+.coluna {
+  flex: 1;
+  padding: 10px;
+}
+.coluna, p{
+	align-items: center;
+}
+div#foot ,.linha, .coluna {
+  flex: 1;
+  padding: 10px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+#header{
+	background-color: #150c3f;
+  	position: relative;
+  	text-align: center;
+  	font-size: 35px;
+}
+
+#cont{
+	
+}
+
+#foot{
+	background-color:#0F47A6;
+  
+  	text-align: center;
+}
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/*pra celular médio*/
+@media (max-width: 750px){
+.linha {
+    flex-direction: column;
+  }
+
+  h1{
+	font-size: 75px;
+	text-align: center;
+	}
+
+	h2{
+	font-size:37px;
+}
+
+div#foot ,.linha, .coluna {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+iframe{
+	width: 560px;
+	height: 315px;
+	align-self: center;
+}
+
+img{
+	width: 75%;
+	height:75%;
+}
+p{
+	padding: 10px;
+	text-indent: 25px;
+	text-align: left;
+}
+}
+@media (max-width: 900px){
+	iframe{
+	width: 400px;
+	height: 310px;
+	align-self: center;
+	}
+	h1{
+		text-align: center;
+	}
+	.sobretexto{
+    left: 15%;
+	}
+	p{
+	padding: 10px;
+	text-indent: 25px;
+	font-size: 50%;
+}
+/*pra celular pequeno*/
+@media (max-width: 600px){
+p{
+	padding: 10px;
+	text-indent: 25px;
+	font-size: 50%;
+}
+	.sobretexto{
+    left: 15%;
+	}
+.linha {
+    flex-direction: column;
+  }
+
+  h1{
+		font-size: 45px;
+		text-align: center;
+	}
+
+  h2{
+		font-size:17px;
+	}
+
+  div#foot ,.linha, .coluna {
+  		flex: 1;
+  		padding: 5px;
+  		text-align: center;
+	}
+  iframe{
+	width: 360px;
+	height: 200px;
+	align-self: center;
+	}
+
+img{
+	width: 50%;
+	height:50%;
+}
+p{
+	padding: 5px;
+	text-indent: 15px;
+}
+}
